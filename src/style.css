@@ -1,0 +1,41 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: corporate --default, business --prefersdark;
+}
+
+@theme {
+  --font-sans:
+    "Source Han Sans SC", "Noto Sans CJK SC", "Noto Sans SC", "思源黑体",
+    "Microsoft YaHei", ui-sans-serif, system-ui, sans-serif;
+  --font-mono:
+    "SF Mono", "Fira Code", "FiraCode Nerd Font", "JetBrains Mono", ui-monospace, SFMono-Regular,
+    Menlo, Monaco, Consolas, monospace;
+}
+
+:root {
+  color-scheme: light dark;
+  font-family:
+    "Source Han Sans SC", "Noto Sans CJK SC", "Noto Sans SC", "思源黑体",
+    "Microsoft YaHei", ui-sans-serif, system-ui, sans-serif;
+}
+
+html[data-theme="corporate"] {
+  color-scheme: light;
+}
+
+html[data-theme="business"] {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+}
+
+pre,
+code,
+textarea {
+  font-family:
+    "SF Mono", "Fira Code", "FiraCode Nerd Font", "JetBrains Mono", ui-monospace, SFMono-Regular,
+    Menlo, Monaco, Consolas, monospace;
+  tab-size: 2;
+}
