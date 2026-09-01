@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "build:file": "npm run build && node scripts/build-file.mjs",
     "preview": "vite preview",
     "check": "tsc --noEmit",
     "test": "vitest run"
